@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CollectionViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="76I-o7-s10">
+                                <rect key="frame" x="10" y="64" width="394" height="778"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Qps-UY-eaz">
+                                    <size key="itemSize" width="84" height="93"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionCell" id="SZ7-cc-bkm" customClass="CollectionCell" customModule="CollectionViewDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="93"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="84" height="93"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JO6-tE-SB8">
+                                                    <rect key="frame" x="2" y="2" width="80" height="89"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQA-8a-7Vf">
+                                                            <rect key="frame" x="0.0" y="5" width="80" height="37"/>
+                                                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                                            <color key="textColor" red="0.99410074950000005" green="0.34987747670000002" blue="0.41052219270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAt-fh-YS1">
+                                                            <rect key="frame" x="0.0" y="47" width="80" height="37"/>
+                                                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                                            <color key="textColor" red="0.99410074950000005" green="0.34987747670000002" blue="0.41052219270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="mAt-fh-YS1" secondAttribute="trailing" id="HaS-AU-FXY"/>
+                                                        <constraint firstItem="LQA-8a-7Vf" firstAttribute="top" secondItem="JO6-tE-SB8" secondAttribute="top" constant="5" id="Rda-w0-kFb"/>
+                                                        <constraint firstAttribute="bottom" secondItem="mAt-fh-YS1" secondAttribute="bottom" constant="5" id="YbV-4V-ltY"/>
+                                                        <constraint firstAttribute="trailing" secondItem="LQA-8a-7Vf" secondAttribute="trailing" id="ZAq-7f-TjO"/>
+                                                        <constraint firstItem="mAt-fh-YS1" firstAttribute="top" secondItem="LQA-8a-7Vf" secondAttribute="bottom" constant="5" id="hUA-Mc-bSZ"/>
+                                                        <constraint firstItem="mAt-fh-YS1" firstAttribute="leading" secondItem="JO6-tE-SB8" secondAttribute="leading" id="mMR-Gj-rRr"/>
+                                                        <constraint firstItem="mAt-fh-YS1" firstAttribute="height" secondItem="LQA-8a-7Vf" secondAttribute="height" id="q6i-87-I6R"/>
+                                                        <constraint firstItem="LQA-8a-7Vf" firstAttribute="leading" secondItem="JO6-tE-SB8" secondAttribute="leading" id="r9F-iy-iji"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="JO6-tE-SB8" secondAttribute="trailing" constant="2" id="QcC-W0-PM3"/>
+                                            <constraint firstItem="JO6-tE-SB8" firstAttribute="leading" secondItem="SZ7-cc-bkm" secondAttribute="leading" constant="2" id="ex5-Zw-UMj"/>
+                                            <constraint firstItem="JO6-tE-SB8" firstAttribute="top" secondItem="SZ7-cc-bkm" secondAttribute="top" constant="2" id="pHU-8n-eO2"/>
+                                            <constraint firstAttribute="bottom" secondItem="JO6-tE-SB8" secondAttribute="bottom" constant="2" id="qTp-Og-Jxd"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="lbl1" destination="LQA-8a-7Vf" id="Hiw-gs-FUQ"/>
+                                            <outlet property="lbl2" destination="mAt-fh-YS1" id="pG5-wu-1ad"/>
+                                            <outlet property="mainView" destination="JO6-tE-SB8" id="GPI-QT-0lI"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="9vI-8N-D0J"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Azs-qq-jNy"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="76I-o7-s10" secondAttribute="trailing" constant="10" id="G8o-Xf-ZYG"/>
+                            <constraint firstItem="76I-o7-s10" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="GWb-MH-bf7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="76I-o7-s10" secondAttribute="bottom" constant="20" id="TDn-7X-Vpo"/>
+                            <constraint firstItem="76I-o7-s10" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="oUx-0E-m2y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
